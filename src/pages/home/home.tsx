@@ -1,11 +1,12 @@
 import React from 'react';
-import { Banner, AboutUs } from '../../components';
+import { Banner, AboutUs, Gallery } from '../../components';
 
 const Homepage = () => {
   return (
     <>
       <Banner/>
       <AboutUs/>
+      <Gallery/>
     </>
   )
 };
