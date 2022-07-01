@@ -1,7 +1,9 @@
 import styled from 'styled-components';
+import bannerImage from '../../assets/banner-aurodharma.png';
 
 export const BannerImage = styled.div`
-  background: grey;
+  background: url('${bannerImage}');
+  background-size: cover;
   height: 45rem;
 `;
 

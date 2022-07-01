@@ -1,10 +1,11 @@
 import React from 'react';
 import { BannerImage, Nav, NavMenu, NavLink, Logo } from './style';
-import logoImage from '../../assets/logo-aurodharma.png'
+import logoImage from '../../assets/logo-aurodharma.png';
+
 const Banner = () => {
   return (
     <>
-      <BannerImage />
+      <BannerImage/>
       <Nav>
         <Logo src={logoImage} alt="Logo da banda Aurodharma"/>
         <NavMenu>
