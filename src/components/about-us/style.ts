@@ -49,7 +49,6 @@ export const Underline = styled.div`
 
 export const AlbumImage = styled.img`
   width: 50%;
-  z-index: 10;
 `;
 
 export const Streamings = styled.div`

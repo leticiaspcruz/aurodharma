@@ -13,7 +13,7 @@ const Footer = () => {
             <AiFillFacebook color="white" size="40"/>
           </Link>
           <Link href="">
-            <BsInstagram color="white" size="40"/>
+            <BsInstagram color="white" size="36"/>
           </Link>
           <Link href="">
             <BsYoutube color="white" size="40"/>
