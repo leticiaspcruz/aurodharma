@@ -20,3 +20,23 @@ export const Link = styled.a`
   font-size: 15px;
   margin: 20px;
 `;
+
+export const Text = styled.p`
+  color: white;
+  font-family: Poppins;
+  font-weight: normal;
+  font-size: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+`;
+
+export const CopyrightLink = styled.a`
+  color: white;
+  font-family: Poppins;
+  font-weight: normal;
+  font-size: 8px;
+  margin-bottom: 30px;
+  margin-top: 0;
+  text-align: center;
+  text-decoration: underline;
+`;

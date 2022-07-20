@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   background: black;
   height: 35rem;
+  margin-top: 4rem;
 `;
 
 export const Column = styled.div`
@@ -19,7 +20,7 @@ export const TitleDiv = styled.div`
   flex-direction: row;
   justify-content: left;
   margin-left: 5rem;
-  margin-top: 4rem;
+  margin-top: 1rem;
 `;
 
 export const ColumnsDiv = styled.div`
@@ -54,7 +55,7 @@ export const Title = styled.h1`
   color: #D1AB24;
   font-family: Poppins;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 30px;
   margin-top: 2rem;
   text-align: right;
 `;

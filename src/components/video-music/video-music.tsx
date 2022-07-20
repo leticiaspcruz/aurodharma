@@ -12,7 +12,7 @@ from './style';
 const VideoMusic = () => {
   const clipeDiva =(
     <iframe 
-    width="460" height="315"
+    width="400" height="300" 
     src="https://www.youtube.com/embed/HwEgXZzG1Rw" 
     title="YouTube video player" 
     frameBorder="0" allow="accelerometer; 
@@ -23,7 +23,7 @@ const VideoMusic = () => {
 
   const clipeKarma =(
     <iframe 
-    width="460" height="315" 
+    width="400" height="233" 
     src="https://www.youtube.com/embed/-4Ps7iTHrdY" 
     title="YouTube video player" frameBorder="0" allow="accelerometer; 
     autoplay; clipboard-write; encrypted-media; 
@@ -34,20 +34,22 @@ const VideoMusic = () => {
   return (
     <>
     <Container>
-      <TitleDiv>
-        <Title>últimos clipes</Title>
-      </TitleDiv>
-      <ColumnsDiv>
-        <Column>
-          {clipeDiva}
-        </Column>
-        <Column>
-          {clipeKarma}
-        </Column>
-      </ColumnsDiv>
-      <ButtonDiv>
-        <YoutubeButton>inscreva-se em nosso canal</YoutubeButton>
-      </ButtonDiv>
+        <TitleDiv>
+          <Title>últimos clipes</Title>
+        </TitleDiv>
+        <div>
+          <ColumnsDiv>
+            <Column>
+              {clipeDiva}
+            </Column>
+            <Column>
+              {clipeKarma}
+            </Column>
+          </ColumnsDiv>
+        </div>
+        <ButtonDiv>
+          <YoutubeButton>inscreva-se em nosso canal</YoutubeButton>
+        </ButtonDiv>
     </Container>
     </>
   )

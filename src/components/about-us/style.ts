@@ -3,8 +3,9 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   background: black;
-  height: 25rem;
+  height: 30rem;
   margin: 4rem auto;
+  padding: 40px;
 `;
 
 export const Section = styled.div`
@@ -20,7 +21,7 @@ export const Title = styled.h1`
   color: #D1AB24;
   font-family: Poppins;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 30px;
   margin-top: 2rem;
   text-align: center;
 `;
@@ -53,8 +54,8 @@ export const AlbumImage = styled.img`
 
 export const Streamings = styled.div`
   width: 50%;
-  margin: 20px;
+  margin-top: 50px;
   display: flex;
-  flex-direction: row; ;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-evenly;
 `;

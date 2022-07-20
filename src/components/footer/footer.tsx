@@ -1,5 +1,5 @@
 import React from 'react';
-import { SocialMedia, Link, Container } from './style';
+import { SocialMedia, Link, Container, Text, CopyrightLink } from './style';
 import { BsInstagram, BsYoutube } from 'react-icons/bs';
 import { AiFillFacebook } from 'react-icons/ai';
 
@@ -20,6 +20,9 @@ const Footer = () => {
           </Link>
         </SocialMedia>
       </Container>
+      <Text>copyright © 2022 - website by {' '}
+        <CopyrightLink href="">@leticiaspcruz</CopyrightLink>
+      </Text>
     </>
   )
 };
