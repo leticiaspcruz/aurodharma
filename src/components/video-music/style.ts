@@ -35,6 +35,7 @@ export const ButtonDiv = styled.div`
   justify-content: right;
   margin-right: 5rem;
   margin-top: 1rem;
+  cursor: pointer;
 `;
 
 export const YoutubeButton = styled.button`
@@ -46,6 +47,7 @@ export const YoutubeButton = styled.button`
   text-align: center;
   border: 1px solid #D1AB24;
   padding: 10px;
+  cursor: pointer;
 `;
 
 export const Title = styled.h1`

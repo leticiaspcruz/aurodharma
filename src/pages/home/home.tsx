@@ -1,5 +1,11 @@
 import React from 'react';
-import { Banner, AboutUs, Gallery, VideoMusic } from '../../components';
+import { 
+  Banner, 
+  AboutUs,
+  Gallery,
+  VideoMusic,
+  Tour, 
+} from '../../components';
 
 const Homepage = () => {
   return (
@@ -8,6 +14,7 @@ const Homepage = () => {
       <AboutUs/>
       <Gallery/>
       <VideoMusic/>
+      <Tour/>
     </>
   )
 };
