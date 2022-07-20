@@ -12,8 +12,6 @@ const Tour = () => {
     <Container>
       <Title>Próximos Eventos</Title>
       <InfoButton/>
-      <InfoButton/>
-      <InfoButton/>
     </Container>
     </>
   )
