@@ -5,6 +5,7 @@ import {
   Gallery,
   VideoMusic,
   Tour, 
+  Footer,
 } from '../../components';
 
 const Homepage = () => {
@@ -15,6 +16,7 @@ const Homepage = () => {
       <Gallery/>
       <VideoMusic/>
       <Tour/>
+      <Footer/>
     </>
   )
 };

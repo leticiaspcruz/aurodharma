@@ -49,6 +49,7 @@ export const Title = styled.h1`
 
 export const Container = styled.div`
   margin-top: 2rem;
+  height: 35rem;
 `;
 
 export const InfoButtonContainer = styled.div`
