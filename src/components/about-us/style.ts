@@ -4,6 +4,7 @@ export const Container = styled.div`
   display: flex;
   background: black;
   height: 25rem;
+  margin: 4rem auto;
 `;
 
 export const Section = styled.div`

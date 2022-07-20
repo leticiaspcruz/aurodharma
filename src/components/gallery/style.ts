@@ -8,5 +8,13 @@ export const Container = styled.div`
 `;
 
 export const Picture = styled.img`
-  width: 50%;
+  width: 25%;
+  margin: 0;
+  transition: transform .3s;
+  opacity: 70%;
+
+  :hover {
+  transform: scale(1.05);
+  opacity: 100%;
+  }
 `;

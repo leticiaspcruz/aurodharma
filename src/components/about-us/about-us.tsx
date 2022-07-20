@@ -28,7 +28,7 @@ const AboutUs = () => {
         <Text>
           Escute agora o nosso último álbum
         </Text>
-        <Link href="">Cabeça do Tempo</Link>
+        <Link href="https://open.spotify.com/playlist/1CzxLXiAYh6K9eUb86WapU?si=2cd5c0005d954658">Cabeça do Tempo</Link>
       </Section>
       <Section>
         <Title>música</Title>
