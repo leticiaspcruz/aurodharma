@@ -5,11 +5,21 @@ export const BannerImage = styled.div`
   background: url('${bannerImage}');
   background-size: cover;
   height: 52rem;
+
+  @media(max-width: 768px) {
+    height: 25rem;
+  }
 `;
 
 export const Logo = styled.img`
   width: 40%;
   margin-bottom: 0;
+
+  @media(max-width: 768px) {
+    width: 55%;
+    margin-top: 10rem;
+  }
+  
 `;
 
 export const Nav = styled.nav`
@@ -32,6 +42,10 @@ export const NavMenu = styled.ul`
   list-style: none;
   margin-top: 0;
   cursor: pointer;
+
+  @media(max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const NavLink = styled.a`
@@ -43,3 +57,4 @@ export const NavLink = styled.a`
     color: #D1AB24;
   }
 `;
+
