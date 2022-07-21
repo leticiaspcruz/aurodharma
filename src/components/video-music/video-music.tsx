@@ -48,7 +48,12 @@ const VideoMusic = () => {
           </ColumnsDiv>
         </div>
         <ButtonDiv>
-          <YoutubeButton>inscreva-se em nosso canal</YoutubeButton>
+          <YoutubeButton type="button" 
+          onClick={()=> {window.open(
+            "https://www.youtube.com/channel/UCOxfPv7E1ujJqTJs3DazSYQ"
+            )}}>
+            inscreva-se em nosso canal
+          </YoutubeButton>
         </ButtonDiv>
     </Container>
     </>

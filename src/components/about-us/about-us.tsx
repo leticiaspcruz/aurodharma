@@ -28,22 +28,30 @@ const AboutUs = () => {
         <Text>
           Escute agora o nosso último álbum
         </Text>
-        <Link href="https://open.spotify.com/playlist/1CzxLXiAYh6K9eUb86WapU?si=2cd5c0005d954658">Cabeça do Tempo</Link>
+        <Link 
+        href=
+        "https://open.spotify.com/playlist/1CzxLXiAYh6K9eUb86WapU?si=2cd5c0005d954658" 
+        target="_blank">
+          Cabeça do Tempo
+        </Link>
       </Section>
       <Section>
         <Title>música</Title>
         <AlbumImage src={albumImage} alt="Capa do álbum Cabeça do Tempo"/>
         <Streamings>
           <Link 
-            href="https://open.spotify.com/artist/1kBvwRKTkyr1xSKoWV9ND3?si=rLdvHjT7QF2hXyuAzpLEeA">
+            href="https://open.spotify.com/artist/1kBvwRKTkyr1xSKoWV9ND3?si=rLdvHjT7QF2hXyuAzpLEeA" 
+            target="_blank">
             <FaSpotify color="white" size="30"/>
           </Link>
           <Link 
-            href="https://music.apple.com/us/artist/aurodharma/1523712756">
+            href="https://music.apple.com/us/artist/aurodharma/1523712756" 
+            target="_blank">
             <SiApplemusic color="white" size="30"/>
           </Link>
           <Link 
-            href="https://deezer.page.link/VT17pxBNXCBHoUdR6">
+            href="https://deezer.page.link/VT17pxBNXCBHoUdR6" 
+            target="_blank">
             <FaDeezer color="white" size="30"/>
           </Link>
         </Streamings>

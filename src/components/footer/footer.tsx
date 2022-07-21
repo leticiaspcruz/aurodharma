@@ -9,19 +9,25 @@ const Footer = () => {
     <>
       <Container>
         <SocialMedia>
-          <Link href="">
+          <Link href="https://www.facebook.com/aurodharma" 
+          target="_blank">
             <AiFillFacebook color="white" size="40"/>
           </Link>
-          <Link href="">
+          <Link href="https://www.instagram.com/aurodharma/"
+          target="_blank">
             <BsInstagram color="white" size="36"/>
           </Link>
-          <Link href="">
+          <Link href="https://www.youtube.com/channel/UCOxfPv7E1ujJqTJs3DazSYQ"
+          target="_blank">
             <BsYoutube color="white" size="40"/>
           </Link>
         </SocialMedia>
       </Container>
       <Text>copyright © 2022 - website by {' '}
-        <CopyrightLink href="">@leticiaspcruz</CopyrightLink>
+        <CopyrightLink href="https://campsite.bio/leticiaspcruz"
+        target="_blank">
+          @leticiaspcruz
+        </CopyrightLink>
       </Text>
     </>
   )

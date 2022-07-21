@@ -4,7 +4,7 @@ import bannerImage from '../../assets/banner-aurodharma.png';
 export const BannerImage = styled.div`
   background: url('${bannerImage}');
   background-size: cover;
-  height: 45rem;
+  height: 52rem;
 `;
 
 export const Logo = styled.img`

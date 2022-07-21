@@ -14,7 +14,10 @@ const InfoButton = () => {
   return (
     <>
       <InfoButtonContainer>
-        <Button>
+        <Button type="button" 
+          onClick={()=> {window.open(
+            NextEvents.eventLink
+            )}}>
           <Day>{NextEvents.dayNumber}</Day>
           <Month>{NextEvents.monthName}</Month>
           <Text>{NextEvents.locationName}</Text>
