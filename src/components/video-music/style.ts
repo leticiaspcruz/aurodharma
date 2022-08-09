@@ -4,6 +4,10 @@ export const Container = styled.div`
   background: black;
   height: 35rem;
   margin-top: 4rem;
+
+  @media(max-width: 768px) {
+    margin: 10px 10px;
+  }
 `;
 
 export const Column = styled.div`
@@ -13,6 +17,11 @@ export const Column = styled.div`
   flex-direction: column; ;
   justify-content: center;
   align-items: center;
+
+  @media(max-width: 768px) {
+    width: 100%;
+    margin: 10px 5px;
+  }
 `;
 
 export const TitleDiv = styled.div`
@@ -21,6 +30,12 @@ export const TitleDiv = styled.div`
   justify-content: left;
   margin-left: 5rem;
   margin-top: 1rem;
+
+  @media(max-width: 768px) {
+    margin: 0;
+    justify-content: center;
+  }
+  
 `;
 
 export const ColumnsDiv = styled.div`
@@ -28,6 +43,11 @@ export const ColumnsDiv = styled.div`
   flex-direction: row;
   justify-content: right;
   margin: 0 2rem;
+
+  @media(max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 
 export const ButtonDiv = styled.div`
@@ -37,6 +57,13 @@ export const ButtonDiv = styled.div`
   margin-right: 5rem;
   margin-top: 1rem;
   cursor: pointer;
+
+  @media(max-width: 768px) {
+    margin-right: 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
 `;
 
 export const YoutubeButton = styled.button`
@@ -49,6 +76,9 @@ export const YoutubeButton = styled.button`
   border: 1px solid #D1AB24;
   padding: 10px;
   cursor: pointer;
+
+  @media(max-width: 768px) {
+  }
 `;
 
 export const Title = styled.h1`

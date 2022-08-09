@@ -5,6 +5,11 @@ export const Container = styled.div`
   flex-direction:row;
   height: 40%;
   margin-top: 20px;
+
+  @media(max-width: 768px) {
+    margin-top: 2rem;
+    height: 50%;
+  }
 `;
 
 export const Picture = styled.img`

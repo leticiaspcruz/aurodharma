@@ -6,6 +6,12 @@ export const Container = styled.div`
   height: 30rem;
   margin: 4rem auto;
   padding: 40px;
+
+  @media(max-width: 768px) {
+    flex-direction: column;
+    height: 42rem;
+    margin: 0;
+  }
 `;
 
 export const Section = styled.div`
@@ -15,6 +21,11 @@ export const Section = styled.div`
   flex-direction: column; ;
   justify-content: center;
   align-items: center;
+
+  @media(max-width: 768px) {
+    width: 100%;
+
+  }
 `;
 
 export const Title = styled.h1`
