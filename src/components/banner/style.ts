@@ -3,12 +3,8 @@ import bannerImage from '../../assets/banner-aurodharma.png';
 
 export const BannerImage = styled.div`
   background: url('${bannerImage}');
-  background-size: cover;
-  height: 52rem;
-
-  @media(max-width: 768px) {
-    height: 25rem;
-  }
+  width: 100%;
+  bottom: 0;
 `;
 
 export const Logo = styled.img`
@@ -17,14 +13,13 @@ export const Logo = styled.img`
 
   @media(max-width: 768px) {
     width: 55%;
-    margin-top: 10rem;
+    margin-bottom: 45rem;
   }
-  
 `;
 
 export const Nav = styled.nav`
   background: transparent;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-weight: normal;
   position: relative ;
   height: 0px;

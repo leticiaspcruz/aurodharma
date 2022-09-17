@@ -7,8 +7,6 @@ export const Container = styled.div`
   margin-top: 20px;
 
   @media(max-width: 768px) {
-    margin-top: 2rem;
-    height: 50%;
   }
 `;
 

@@ -15,7 +15,7 @@ export const SocialMedia = styled.div`
 
 export const Link = styled.a`
   color: #D1AB24;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-weight: normal;
   font-size: 15px;
   margin: 20px;
@@ -23,7 +23,7 @@ export const Link = styled.a`
 
 export const Text = styled.p`
   color: white;
-  font-family: Poppins;
+  font-family:'Poppins', sans-serif;
   font-weight: normal;
   font-size: 8px;
   margin-bottom: 20px;
@@ -32,7 +32,7 @@ export const Text = styled.p`
 
 export const CopyrightLink = styled.a`
   color: white;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-weight: normal;
   font-size: 8px;
   margin-bottom: 30px;

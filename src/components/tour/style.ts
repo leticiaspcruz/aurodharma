@@ -14,7 +14,7 @@ export const Button = styled.button`
 
 export const Day = styled.h1`
   color: white;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 25px;
   margin: 6px;
@@ -22,7 +22,7 @@ export const Day = styled.h1`
 
 export const Text = styled.p`
   color: white;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-weight: lighter;
   font-size: 15px;
   margin: 6px;
@@ -31,7 +31,7 @@ export const Text = styled.p`
 
 export const Month = styled.p`
   color: white;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-weight: lighter;
   font-size: 15px;
   margin: 6px;
@@ -41,7 +41,7 @@ export const Month = styled.p`
 
 export const Title = styled.h1`
   color: #D1AB24;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-weight: lighter;
   font-size: 20px;
   text-align: center;

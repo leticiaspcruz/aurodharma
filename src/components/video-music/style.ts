@@ -4,23 +4,19 @@ export const Container = styled.div`
   background: black;
   height: 35rem;
   margin-top: 4rem;
-
-  @media(max-width: 768px) {
-    margin: 10px 10px;
-  }
 `;
 
 export const Column = styled.div`
-  width: 50%;
-  margin: 20px;
+  width: 100%;
   display: flex;
-  flex-direction: column; ;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 30px;
 
   @media(max-width: 768px) {
     width: 100%;
-    margin: 10px 5px;
+    margin: 10px 0;
   }
 `;
 
@@ -42,11 +38,12 @@ export const ColumnsDiv = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: right;
-  margin: 0 2rem;
+  margin: 40px;
 
   @media(max-width: 768px) {
     flex-direction: column;
     justify-content: center;
+    margin: 0 40px;
   }
 `;
 
@@ -60,16 +57,16 @@ export const ButtonDiv = styled.div`
 
   @media(max-width: 768px) {
     margin-right: 0;
+    margin-top: 2rem;
     flex-direction: column;
     justify-content: center;
   }
-  
 `;
 
 export const YoutubeButton = styled.button`
   color: #D1AB24;
   background-color: transparent;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-weight: lighter;
   font-size: 16px;
   text-align: center;
@@ -78,12 +75,13 @@ export const YoutubeButton = styled.button`
   cursor: pointer;
 
   @media(max-width: 768px) {
+    margin: 0 36px;
   }
 `;
 
 export const Title = styled.h1`
   color: #D1AB24;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 30px;
   margin-top: 2rem;

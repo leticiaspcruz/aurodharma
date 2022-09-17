@@ -10,26 +10,30 @@ import {
 from './style';
 
 const VideoMusic = () => {
-  const clipeDiva =(
+  const ClipeDiva = () => {
+    return (
     <iframe 
-    width="400" height="300" 
-    src="https://www.youtube.com/embed/HwEgXZzG1Rw" 
-    title="YouTube video player" 
-    frameBorder="0" allow="accelerometer; 
-    autoplay; clipboard-write; encrypted-media; 
-    gyroscope; picture-in-picture" allowFullScreen>
-    </iframe>
-  )
+      width="100%" height="100%" 
+      src="https://www.youtube.com/embed/HwEgXZzG1Rw" 
+      title="YouTube video player" 
+      frameBorder="0" allow="accelerometer; 
+      autoplay; clipboard-write; encrypted-media; 
+      gyroscope; picture-in-picture" allowFullScreen>
+      </iframe>
+    )
+  }
 
-  const clipeKarma =(
-    <iframe 
-    width="400" height="233" 
-    src="https://www.youtube.com/embed/-4Ps7iTHrdY" 
-    title="YouTube video player" frameBorder="0" allow="accelerometer; 
-    autoplay; clipboard-write; encrypted-media; 
-    gyroscope; picture-in-picture" allowFullScreen>
-    </iframe>
-  )
+  const ClipeKarma = () => {
+    return (
+      <iframe 
+      width="100%" height="100%" 
+      src="https://www.youtube.com/embed/-4Ps7iTHrdY" 
+      title="YouTube video player" frameBorder="0" allow="accelerometer; 
+      autoplay; clipboard-write; encrypted-media; 
+      gyroscope; picture-in-picture" allowFullScreen>
+      </iframe>
+    )
+  }
 
   return (
     <>
@@ -40,10 +44,10 @@ const VideoMusic = () => {
         <div>
           <ColumnsDiv>
             <Column>
-              {clipeDiva}
+              <ClipeDiva/>
             </Column>
             <Column>
-              {clipeKarma}
+              <ClipeKarma/>
             </Column>
           </ColumnsDiv>
         </div>

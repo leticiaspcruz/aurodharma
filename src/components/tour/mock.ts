@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const NextEvents = {
+export const nextEvents = {
   dayNumber: "01",
   monthName: "de Agosto",
   locationName: " Maquinária Grunge / Evento Online - 16h",

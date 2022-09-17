@@ -8,7 +8,7 @@ import {
 } 
 from './style';
 
-import { NextEvents } from './mock';
+import { nextEvents } from './mock';
 
 const InfoButton = () => {
   return (
@@ -16,11 +16,11 @@ const InfoButton = () => {
       <InfoButtonContainer>
         <Button type="button" 
           onClick={()=> {window.open(
-            NextEvents.eventLink
+            nextEvents.eventLink
             )}}>
-          <Day>{NextEvents.dayNumber}</Day>
-          <Month>{NextEvents.monthName}</Month>
-          <Text>{NextEvents.locationName}</Text>
+          <Day>{nextEvents.dayNumber}</Day>
+          <Month>{nextEvents.monthName}</Month>
+          <Text>{nextEvents.locationName}</Text>
         </Button>
       </InfoButtonContainer>
     </>

@@ -30,7 +30,7 @@ export const Section = styled.div`
 
 export const Title = styled.h1`
   color: #D1AB24;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 30px;
   margin-top: 2rem;
@@ -39,7 +39,7 @@ export const Title = styled.h1`
 
 export const Text = styled.p`
   color: white;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-weight: normal;
   font-size: 15px;
   margin: 0;
@@ -48,7 +48,7 @@ export const Text = styled.p`
 
 export const Link = styled.a`
   color: #D1AB24;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-weight: normal;
   font-size: 15px;
 `;
