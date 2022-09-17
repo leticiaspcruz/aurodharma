@@ -10,6 +10,12 @@ export const Button = styled.button`
   border: 1px solid #D1AB24;
   padding: 20px;
   cursor: pointer;
+
+  @media(max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
 `;
 
 export const Day = styled.h1`
@@ -48,14 +54,19 @@ export const Title = styled.h1`
 `;
 
 export const Container = styled.div`
-  margin-top: 2rem;
-  height: 20rem;
+  margin: 0 36px;
+
+  :hover {
+  color: #f1f1f1;
+  }
 `;
 
 export const InfoButtonContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 5px;
-  width: 100%;
+
+  @media(max-width: 768px) {
+    flex-direction: column;
+  }
 `;
