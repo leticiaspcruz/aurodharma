@@ -54,10 +54,10 @@ export const Title = styled.h1`
 `;
 
 export const Container = styled.div`
-  margin: 0 36px;
+  margin: 0px 36px;
 
-  :hover {
-  color: #f1f1f1;
+  @media(max-width: 768px) {
+    margin: 120px 36px;
   }
 `;
 
