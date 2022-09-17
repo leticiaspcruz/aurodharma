@@ -69,7 +69,7 @@ export const AlbumImage = styled.img`
 `;
 
 export const Streamings = styled.div`
-  width: 50%;
+  width: 56%;
   margin-top: 50px;
   display: flex;
   flex-direction: row;
