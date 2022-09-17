@@ -3,8 +3,17 @@ import bannerImage from '../../assets/banner-aurodharma.png';
 
 export const BannerImage = styled.div`
   background: url('${bannerImage}');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60rem;
   width: 100%;
   bottom: 0;
+
+  @media(max-width: 768px) {
+    height: 22rem;
+    background-size: contain;
+    width: 122%;
+  }
 `;
 
 export const Logo = styled.img`
@@ -13,7 +22,7 @@ export const Logo = styled.img`
 
   @media(max-width: 768px) {
     width: 55%;
-    margin-bottom: 45rem;
+    margin-top: 300px;
   }
 `;
 
@@ -28,7 +37,7 @@ export const Nav = styled.nav`
   justify-content: center;
   align-items: center;
   z-index: 10;
-  bottom: 12rem;
+  bottom: 15rem;
 `;
 
 export const NavMenu = styled.ul`

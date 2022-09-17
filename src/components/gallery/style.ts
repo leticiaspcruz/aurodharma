@@ -5,9 +5,6 @@ export const Container = styled.div`
   flex-direction:row;
   height: 40%;
   margin-top: 20px;
-
-  @media(max-width: 768px) {
-  }
 `;
 
 export const Picture = styled.img`
