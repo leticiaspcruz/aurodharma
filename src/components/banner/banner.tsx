@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BannerImage, Nav, NavMenu, NavLink, Logo } from './style';
 import logoImage from '../../assets/logo-aurodharma.png';
-
+import { ContactModal } from '../contact';
 const Banner = () => {
+  const [showModal, setShowModal] = useState(false);
+  const toggle = ()=> { setShowModal(!showModal) };
   return (
     <>
       <BannerImage/>
@@ -13,9 +15,10 @@ const Banner = () => {
           <NavLink href="#music">música</NavLink>
           <NavLink href="#video-music">clipes</NavLink>
           <NavLink href="#tour">próximos eventos</NavLink>
-          <NavLink href="#contact">contato</NavLink>
+          <NavLink onClick={toggle}>contato</NavLink>
         </NavMenu>
       </Nav>
+      {showModal && <ContactModal/>}
     </>
   )
 };

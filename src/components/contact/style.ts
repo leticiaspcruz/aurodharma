@@ -6,13 +6,34 @@ export const Container = styled.div`
   align-items: center;
   background: black;
   font-size: 30px;
-  padding: 50px;
   text-align: center;
+  z-index: 100;
+  max-width: 800px;
+  padding: 30px;
+  position: relative;
+  top: 150px;
+  left: 15%;
+  right: 15%;
+  width: 80%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+  margin: 0 50px;
+`;
+
+export const Overlay = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);  
 `;
 
 export const ContactButton = styled.button`
   background: #D1AB24;
-  width: 30%;
+  width: 80%;
   padding: 30px;
   margin: 10px 0;
   font-family: 'Poppins', sans-serif;
