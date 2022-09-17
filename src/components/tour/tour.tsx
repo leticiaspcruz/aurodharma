@@ -9,7 +9,7 @@ import { InfoButton } from '.';
 const Tour = () => {
   return (
     <>
-    <Container>
+    <Container id="tour">
       <Title>Próximos Eventos</Title>
       <InfoButton/>
     </Container>

@@ -17,7 +17,7 @@ const AboutUs = () => {
   return (
     <>
     <Container>
-      <Section>
+      <Section id="about-us">
         <Title>quem somos</Title>
         <Text>
           Uma banda que traz ideias que viajam de dentro da mente para 
@@ -35,7 +35,7 @@ const AboutUs = () => {
           Cabeça do Tempo
         </Link>
       </Section>
-      <Section>
+      <Section id="music">
         <Title>música</Title>
         <AlbumImage src={albumImage} alt="Capa do álbum Cabeça do Tempo"/>
         <Streamings>
