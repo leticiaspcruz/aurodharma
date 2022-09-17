@@ -10,7 +10,7 @@ export const Container = styled.div`
   @media(max-width: 768px) {
     flex-direction: column;
     height: 42rem;
-    margin: 0;
+    margin: 10px;
   }
 `;
 
@@ -24,7 +24,7 @@ export const Section = styled.div`
 
   @media(max-width: 768px) {
     width: 100%;
-
+    margin: 10px 0;
   }
 `;
 
@@ -56,7 +56,12 @@ export const Link = styled.a`
 export const Underline = styled.div`
   border-bottom: 2px solid #D1AB24;
   width: 20rem;
-  margin: 15px;
+  margin: 25px;
+
+  @media(max-width: 768px) {
+    width: 17rem;
+    margin: 40px;
+  }
 `;
 
 export const AlbumImage = styled.img`
