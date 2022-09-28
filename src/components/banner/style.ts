@@ -12,7 +12,6 @@ export const BannerImage = styled.div`
   @media(max-width: 768px) {
     height: 22rem;
     background-size: contain;
-    width: 122%;
   }
 `;
 

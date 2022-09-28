@@ -14,11 +14,6 @@ export const Container = styled.div`
   top: 150px;
   left: 15%;
   right: 15%;
-  width: 80%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  outline: 0;
-  margin: 0 50px;
 `;
 
 export const Overlay = styled.div`
@@ -28,7 +23,7 @@ export const Overlay = styled.div`
   z-index: 1040;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0,0,0,0.5);  
+  background-color: rgba(0,0,0,0.2);  
 `;
 
 export const ContactButton = styled.button`
@@ -45,4 +40,18 @@ export const Title = styled.h1`
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 30px;
+`;
+
+export const CloseButton = styled.button`
+  position: absolute;
+  width: 40px;
+  right: -15px;
+  top: -20px;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 5px;
+  background: #D1AB24;
+  border-radius: 50%;
+  font-size: 16px;
+  color: black;
 `;
