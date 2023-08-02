@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BannerImage, Nav, NavMenu, NavLink, Logo } from './style';
 import logoImage from '../../assets/logo-aurodharma.png';
 import { ContactModal } from '../contact';
 import { useModal } from '../../hooks';
 
 const Banner = () => {
-  const {isOpen, toggle} = useModal();
+  const { isOpen, toggle } = useModal();
 
   return (
     <>
@@ -20,7 +20,7 @@ const Banner = () => {
           <NavLink onClick={toggle}>contato</NavLink>
         </NavMenu>
       </Nav>
-      {isOpen && (<ContactModal isOpen={isOpen} toggle={toggle}/>)}
+      <ContactModal isOpen={isOpen} toggle={toggle} />
     </>
   )
 };

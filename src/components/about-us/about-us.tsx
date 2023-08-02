@@ -12,6 +12,7 @@ import {
 import albumImage from '../../assets/album-aurodharma.png';
 import { FaSpotify, FaDeezer } from 'react-icons/fa';
 import { SiApplemusic } from 'react-icons/si';
+import { LINKS } from '../../constants';
 
 const AboutUs = () => {
   return (
@@ -29,28 +30,26 @@ const AboutUs = () => {
           Escute agora o nosso último álbum
         </Text>
         <Link 
-        href=
-        "https://open.spotify.com/playlist/1CzxLXiAYh6K9eUb86WapU?si=2cd5c0005d954658" 
+        href={LINKS.SPOTIFY}
         target="_blank">
           Cabeça do Tempo
         </Link>
       </Section>
       <Section id="music">
-        <Title>música</Title>
-        <AlbumImage src={albumImage} alt="Capa do álbum Cabeça do Tempo"/>
+        <AlbumImage src={albumImage} onClick={() => window.open(LINKS.SPOTIFY, '_blank')} alt="Capa do álbum Cabeça do Tempo"/>
         <Streamings>
           <Link 
-            href="https://open.spotify.com/artist/1kBvwRKTkyr1xSKoWV9ND3?si=rLdvHjT7QF2hXyuAzpLEeA" 
+            href={LINKS.SPOTIFY}
             target="_blank">
             <FaSpotify color="white" size="30"/>
           </Link>
           <Link 
-            href="https://music.apple.com/us/artist/aurodharma/1523712756" 
+            href={LINKS.APPLE}
             target="_blank">
             <SiApplemusic color="white" size="30"/>
           </Link>
           <Link 
-            href="https://deezer.page.link/VT17pxBNXCBHoUdR6" 
+            href={LINKS.DEEZER}
             target="_blank">
             <FaDeezer color="white" size="30"/>
           </Link>

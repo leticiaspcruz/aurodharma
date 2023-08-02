@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   background: black;
   height: 30rem;
-  margin: 10rem auto;
+  margin: 5rem auto;
   padding: 40px;
 
   @media(max-width: 768px) {
@@ -66,6 +66,12 @@ export const Underline = styled.div`
 
 export const AlbumImage = styled.img`
   width: 60%;
+  cursor: pointer;
+  transition: transform .3s;
+
+  :hover {
+  transform: scale(1.05);
+  }
 `;
 
 export const Streamings = styled.div`

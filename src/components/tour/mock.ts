@@ -1,8 +1,8 @@
 import React from 'react';
 
 export const nextEvents = {
-  dayNumber: "01",
-  monthName: "de Agosto",
-  locationName: " Maquinária Grunge / Evento Online - 16h",
-  eventLink: "https://www.youtube.com/channel/UCLMwsXviBHMXbcVpd6DjFAg",
+  dayNumber: "08",
+  monthName: "de Setembro",
+  locationName: "Casa de Cultura do Butantã às 16h",
+  eventLink: "https://www.instagram.com/casadeculturabt/",
 };

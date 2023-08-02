@@ -3,8 +3,11 @@ import { SocialMedia, Link, Container, Text, CopyrightLink } from './style';
 import { BsInstagram, BsYoutube } from 'react-icons/bs';
 import { AiFillFacebook } from 'react-icons/ai';
 
-
 const Footer = () => {
+  const getCurrentYear = () => {
+    return new Date().getFullYear();
+  };
+
   return (
     <>
       <Container>
@@ -23,7 +26,7 @@ const Footer = () => {
           </Link>
         </SocialMedia>
       </Container>
-      <Text>copyright © 2022 - website by {' '}
+      <Text>copyright © {getCurrentYear()} - website by {' '}
         <CopyrightLink href="https://campsite.bio/leticiaspcruz"
         target="_blank">
           @leticiaspcruz

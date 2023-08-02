@@ -1,11 +1,9 @@
 import React from 'react';
-import { Homepage } from './pages/home';
+import { Homepage } from './pages';
 
 function App() {
   return (
-    <>
       <Homepage/>
-    </>
   );
 }
 

@@ -70,7 +70,8 @@ export const YoutubeButton = styled.button`
   font-weight: lighter;
   font-size: 16px;
   text-align: center;
-  border: 1px solid #D1AB24;
+  text-decoration: underline;
+  border: none;
   padding: 10px;
   cursor: pointer;
 
