@@ -10,6 +10,12 @@ export const Button = styled.button`
   border: 1px solid #D1AB24;
   padding: 20px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+  &:hover {
+    border: 1px solid #F1C40F;
+    background-color: #D1AB24;
+  }
 
   @media(max-width: 768px) {
     flex-direction: column;
@@ -57,7 +63,9 @@ export const Container = styled.div`
   margin: 0px 36px;
 
   @media(max-width: 768px) {
-    margin: 120px 36px;
+    margin-top: 75%;
+    margin-left: 36px;
+    margin-right: 36px;
   }
 `;
 

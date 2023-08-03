@@ -76,7 +76,7 @@ export const YoutubeButton = styled.button`
   cursor: pointer;
 
   @media(max-width: 768px) {
-    margin: 0 36px;
+    margin: -20px 0 36px;
   }
 `;
 

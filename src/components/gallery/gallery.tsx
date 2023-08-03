@@ -1,8 +1,8 @@
 import React from 'react';
-import {Container, Picture} from './style';
+import { Container, Picture } from './style';
 import sidPicture from '../../assets/sid.png';
 import martinPicture from '../../assets/martin.png';
-import marceloPicture from '../../assets/ellen.png'; //
+import marceloPicture from '../../assets/marcelo.png'; //
 import elidioPicture from '../../assets/elidio.png';
 
 const Gallery = () => {

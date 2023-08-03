@@ -5,6 +5,11 @@ export const Container = styled.div`
   flex-direction:row;
   height: 40%;
   margin-top: 20px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
 `;
 
 export const Picture = styled.img`
@@ -16,5 +21,10 @@ export const Picture = styled.img`
   :hover {
   transform: scale(1.05);
   opacity: 100%;
+  z-index: 90;
   }
+  
+  /* @media (max-width: 768px) {
+    width: 20%;
+  } */
 `;
