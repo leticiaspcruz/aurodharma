@@ -1,9 +1,15 @@
 import styled from 'styled-components';
+import tokens from '../../theme/tokens';
 
 export const Container = styled.div`
   background: black;
-  height: 35rem;
-  margin-top: 4rem;
+  height: 30rem;
+  margin: 5rem 8rem;
+
+  @media(max-width: ${tokens.aurodharma.breakpoints.tablet}) {
+    height: 42rem;
+    margin: 2rem;
+  }
 `;
 
 export const Column = styled.div`
@@ -12,11 +18,14 @@ export const Column = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 30px;
 
-  @media(max-width: 768px) {
+  iframe {
+    border-radius: 8px;
+  }
+
+  @media(max-width: ${tokens.aurodharma.breakpoints.tablet}) {
     width: 100%;
-    margin: 10px 0;
+    margin: 2rem 0;
   }
 `;
 
@@ -24,11 +33,9 @@ export const TitleDiv = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: left;
-  margin-left: 5rem;
-  margin-top: 1rem;
 
-  @media(max-width: 768px) {
-    margin: 0;
+  @media(max-width: ${tokens.aurodharma.breakpoints.tablet}) {
+    margin: 0 2.5rem;
     justify-content: center;
   }
   
@@ -38,53 +45,48 @@ export const ColumnsDiv = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: right;
-  margin: 40px;
+  gap: 42px;
 
-  @media(max-width: 768px) {
+  @media(max-width: ${tokens.aurodharma.breakpoints.tablet}) {
     flex-direction: column;
     justify-content: center;
-    margin: 0 40px;
+    margin: 0 2.5rem;
   }
 `;
 
 export const ButtonDiv = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: right;
-  margin-right: 5rem;
-  margin-top: 1rem;
+  justify-content: center;
   cursor: pointer;
 
-  @media(max-width: 768px) {
-    margin-right: 0;
-    margin-top: 2rem;
-    flex-direction: column;
-    justify-content: center;
+  @media(max-width: ${tokens.aurodharma.breakpoints.tablet}) {
+    margin-top: 1rem;
   }
 `;
 
 export const YoutubeButton = styled.button`
-  color: #D1AB24;
+  color: ${tokens.aurodharma.color.yellowStandard};
   background-color: transparent;
-  font-family: 'Poppins', sans-serif;
+  font-family: ${tokens.aurodharma.font.family};
   font-weight: lighter;
-  font-size: 16px;
+  font-size: ${tokens.aurodharma.font.size.md};
   text-align: center;
   text-decoration: underline;
   border: none;
-  padding: 10px;
+  padding: 0.6rem;
   cursor: pointer;
+  margin: 2rem;
 
-  @media(max-width: 768px) {
+  @media(max-width: ${tokens.aurodharma.breakpoints.tablet}) {
     margin: -20px 0 36px;
   }
 `;
 
 export const Title = styled.h1`
-  color: #D1AB24;
-  font-family: 'Poppins', sans-serif;
+  color: ${tokens.aurodharma.color.yellowLight};
+  font-family: ${tokens.aurodharma.font.family};
   font-weight: bold;
-  font-size: 30px;
-  margin-top: 2rem;
+  font-size: ${tokens.aurodharma.font.size.xxl};
   text-align: right;
 `;

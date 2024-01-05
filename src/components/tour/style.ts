@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import tokens from '../../theme/tokens';
 
 export const Button = styled.button`
   display: flex;
@@ -7,17 +8,17 @@ export const Button = styled.button`
   margin-top: 2rem;
   width: 550px;
   background: transparent;
-  border: 1px solid #D1AB24;
-  padding: 20px;
+  border: 1px solid ${tokens.aurodharma.color.yellowStandard};
+  padding: 1.25rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
   
   &:hover {
-    border: 1px solid #F1C40F;
-    background-color: #D1AB24;
+    border: 1px solid ${tokens.aurodharma.color.yellowLight};
+    background-color: ${tokens.aurodharma.color.yellowStandard};
   }
 
-  @media(max-width: 768px) {
+  @media(max-width: ${tokens.aurodharma.breakpoints.tablet}) {
     flex-direction: column;
     width: 100%;
     align-items: center;
@@ -25,47 +26,48 @@ export const Button = styled.button`
 `;
 
 export const Day = styled.h1`
-  color: white;
-  font-family: 'Poppins', sans-serif;
+  color: ${tokens.aurodharma.color.white};
+  font-family: ${tokens.aurodharma.font.family};
   font-weight: bold;
-  font-size: 25px;
-  margin: 6px;
+  font-size: ${tokens.aurodharma.font.size.lg};
+  margin: 0.3rem;
 `;
 
 export const Text = styled.p`
-  color: white;
-  font-family: 'Poppins', sans-serif;
+  color: ${tokens.aurodharma.color.white};
+  font-family: ${tokens.aurodharma.font.family};
   font-weight: lighter;
-  font-size: 15px;
-  margin: 6px;
-  padding-top: 6px;
+  font-size: ${tokens.aurodharma.font.size.md};
+  margin: 0.3rem;
+  padding-top: 0.3rem;
 `;
 
 export const Month = styled.p`
-  color: white;
-  font-family: 'Poppins', sans-serif;
+  color: ${tokens.aurodharma.color.white};
+  font-family: ${tokens.aurodharma.font.family};
   font-weight: lighter;
-  font-size: 15px;
-  margin: 6px;
+  font-size: ${tokens.aurodharma.font.size.sm};
+  margin: 0.3rem;
   margin-left: 0 !important;
-  padding-top: 6px;
+  padding-top: 0.3rem;
 `;
 
 export const Title = styled.h1`
-  color: #D1AB24;
-  font-family: 'Poppins', sans-serif;
+  color: ${tokens.aurodharma.color.white};
+  font-family: ${tokens.aurodharma.font.family};
   font-weight: lighter;
-  font-size: 20px;
+  font-size: ${tokens.aurodharma.font.size.xl};
   text-align: center;
 `;
 
 export const Container = styled.div`
-  margin: 0px 36px;
+  margin: 0 2.25rem;
+  color: ${tokens.aurodharma.color.yellowStandard};
 
-  @media(max-width: 768px) {
+  @media(max-width: ${tokens.aurodharma.breakpoints.tablet}) {
     margin-top: 75%;
-    margin-left: 36px;
-    margin-right: 36px;
+    margin-left: 2.25rem;
+    margin-right: 2.25rem;
   }
 `;
 
@@ -74,7 +76,7 @@ export const InfoButtonContainer = styled.div`
   flex-direction: row;
   justify-content: center;
 
-  @media(max-width: 768px) {
+  @media(max-width: ${tokens.aurodharma.breakpoints.tablet}) {
     flex-direction: column;
   }
 `;

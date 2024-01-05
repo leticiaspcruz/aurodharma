@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import bannerImage from '../../assets/aurodharma.jpg';
+import tokens from '../../theme/tokens';
 
 export const BannerImage = styled.div`
   background: url('${bannerImage}');
@@ -11,9 +12,13 @@ export const BannerImage = styled.div`
   opacity: 70%;
   background-position: center top -120px;
 
-  @media(max-width: 768px) {
+  @media(max-width: ${tokens.aurodharma.breakpoints.tablet}) {
     height: 22rem;
     background-position: center top -45px;
+  }
+
+  @media(min-width: ${tokens.aurodharma.breakpoints.super}) {
+    height: 100rem;
   }
 `;
 
@@ -21,24 +26,32 @@ export const Logo = styled.img`
   width: 40%;
   margin-bottom: 0;
 
-  @media(max-width: 768px) {
-    width: 85%;
-    margin-top: 110%;
+  @media(max-width: ${tokens.aurodharma.breakpoints.tablet}) {
+    width: 60%;
+    margin-top: 60%;
+  }
+
+  @media(min-width: ${tokens.aurodharma.breakpoints.super}) {
+    width: 30%;
   }
 `;
 
 export const Nav = styled.nav`
   background: transparent;
-  font-family: 'Poppins', sans-serif;
+  font-family: ${tokens.aurodharma.font.family};
   font-weight: normal;
   position: relative ;
-  height: 0px;
+  height: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 10;
   bottom: 15rem;
+
+  @media(min-width: ${tokens.aurodharma.breakpoints.super}) {
+    bottom: 25rem;
+  }
 `;
 
 export const NavMenu = styled.ul`
@@ -47,20 +60,21 @@ export const NavMenu = styled.ul`
   list-style: none;
   margin-top: 0;
   cursor: pointer;
+  gap: 14px;
 
-  @media(max-width: 768px) {
+  @media(max-width: ${tokens.aurodharma.breakpoints.tablet}) {
     display: none;
   }
 `;
 
 export const NavLink = styled.a`
   color: white;
-  margin: 10px;
   text-decoration: none;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  text-shadow: ${tokens.aurodharma.shadow.text};
 
   :hover {
-    color: #D1AB24;
+    color: ${tokens.aurodharma.color.yellowStandard};
+    transition: 0.3s ease;
   }
 `;
 

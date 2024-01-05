@@ -1,66 +1,68 @@
 import styled from 'styled-components';
+import tokens from '../../theme/tokens';
+
 
 export const Container = styled.div`
   display: flex;
-  background: black;
   height: 30rem;
   margin: 5rem auto;
-  padding: 40px;
+  padding: 2.5rem;
 
-  @media(max-width: 768px) {
+  @media(max-width: ${tokens.aurodharma.breakpoints.tablet}) {
     flex-direction: column;
+    align-items: center;
     height: 42rem;
-    margin: 10px;
+    margin: 0.3rem;
   }
 `;
 
 export const Section = styled.div`
   width: 50%;
-  margin: 20px;
+  margin: 1.25rem;
   display: flex;
   flex-direction: column; ;
   justify-content: center;
   align-items: center;
 
-  @media(max-width: 768px) {
+  @media(max-width: ${tokens.aurodharma.breakpoints.tablet}) {
     width: 100%;
-    margin: 10px 0;
+    margin: 0.6rem 0;
   }
 `;
 
 export const Title = styled.h1`
-  color: #D1AB24;
-  font-family: 'Poppins', sans-serif;
+  color: ${tokens.aurodharma.color.yellowLight};
+  font-family: ${tokens.aurodharma.font.family};
   font-weight: bold;
-  font-size: 30px;
+  font-size: ${tokens.aurodharma.font.size.xxl};
   margin-top: 2rem;
   text-align: center;
 `;
 
 export const Text = styled.p`
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: ${tokens.aurodharma.font.family};
   font-weight: normal;
-  font-size: 15px;
+  font-size: ${tokens.aurodharma.font.size.md};
   margin: 0;
   text-align: center;
 `;
 
 export const Link = styled.a`
-  color: #D1AB24;
-  font-family: 'Poppins', sans-serif;
+  color: ${tokens.aurodharma.color.yellowStandard};
+  font-family: ${tokens.aurodharma.font.family};
   font-weight: normal;
-  font-size: 15px;
+  font-size: ${tokens.aurodharma.font.size.md};
 `;
 
 export const Underline = styled.div`
-  border-bottom: 2px solid #D1AB24;
+  border-bottom: 2px solid ${tokens.aurodharma.color.yellowStandard};
   width: 20rem;
-  margin: 25px;
+  margin: 1.5rem;
 
-  @media(max-width: 768px) {
+  @media(max-width: ${tokens.aurodharma.breakpoints.tablet}) {
     width: 17rem;
-    margin: 40px;
+    margin: 2.5rem;
   }
 `;
 
@@ -68,6 +70,15 @@ export const AlbumImage = styled.img`
   width: 60%;
   cursor: pointer;
   transition: transform .3s;
+  border-radius: 8px;
+
+  @media(max-width: ${tokens.aurodharma.breakpoints.tablet}) {
+    width: 42%;
+  }
+
+  @media(min-width: ${tokens.aurodharma.breakpoints.super}) {
+    width: 30%;
+  }
 
   :hover {
   transform: scale(1.05);
@@ -76,7 +87,7 @@ export const AlbumImage = styled.img`
 
 export const Streamings = styled.div`
   width: 56%;
-  margin-top: 50px;
+  margin-top: 3rem;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
