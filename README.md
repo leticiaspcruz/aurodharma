@@ -23,7 +23,7 @@ $ nvm install 16
 Clone the repository to your local environment:
 
 ```sh
-$ npm start
+$ https://github.com/leticiaspcruz/aurodharma.git
 ```
 
 Install dependencies using NPM or Yarn:
