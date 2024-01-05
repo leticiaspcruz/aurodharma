@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import tokens from '../../theme/tokens';
 
 export const Container = styled.div`
   background: black;
@@ -14,9 +15,9 @@ export const Column = styled.div`
   align-items: center;
   margin: 30px;
 
-  @media(max-width: 768px) {
+  @media(max-width: ${tokens.aurodharma.breakpoints.tablet}) {
     width: 100%;
-    margin: 10px 0;
+    margin: 2rem 0;
   }
 `;
 
@@ -27,7 +28,7 @@ export const TitleDiv = styled.div`
   margin-left: 5rem;
   margin-top: 1rem;
 
-  @media(max-width: 768px) {
+  @media(max-width: ${tokens.aurodharma.breakpoints.tablet}) {
     margin: 0;
     justify-content: center;
   }
@@ -38,12 +39,12 @@ export const ColumnsDiv = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: right;
-  margin: 40px;
+  margin: 2.5rem;
 
-  @media(max-width: 768px) {
+  @media(max-width: ${tokens.aurodharma.breakpoints.tablet}) {
     flex-direction: column;
     justify-content: center;
-    margin: 0 40px;
+    margin: 0 2.5rem;
   }
 `;
 
@@ -55,7 +56,7 @@ export const ButtonDiv = styled.div`
   margin-top: 1rem;
   cursor: pointer;
 
-  @media(max-width: 768px) {
+  @media(max-width: ${tokens.aurodharma.breakpoints.tablet}) {
     margin-right: 0;
     margin-top: 2rem;
     flex-direction: column;
@@ -64,25 +65,25 @@ export const ButtonDiv = styled.div`
 `;
 
 export const YoutubeButton = styled.button`
-  color: #D1AB24;
+  color: ${tokens.aurodharma.color.yellowStandard};
   background-color: transparent;
-  font-family: 'Poppins', sans-serif;
+  font-family: ${tokens.aurodharma.font.family};
   font-weight: lighter;
-  font-size: 16px;
+  font-size: ${tokens.aurodharma.font.size.md};
   text-align: center;
   text-decoration: underline;
   border: none;
-  padding: 10px;
+  padding: 0.6rem;
   cursor: pointer;
 
-  @media(max-width: 768px) {
+  @media(max-width: ${tokens.aurodharma.breakpoints.tablet}) {
     margin: -20px 0 36px;
   }
 `;
 
 export const Title = styled.h1`
-  color: #D1AB24;
-  font-family: 'Poppins', sans-serif;
+  color: ${tokens.aurodharma.color.yellowStandard};
+  font-family: ${tokens.aurodharma.font.family};
   font-weight: bold;
   font-size: 30px;
   margin-top: 2rem;

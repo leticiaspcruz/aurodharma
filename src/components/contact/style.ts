@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import tokens from '../../theme/tokens';
 
 export const Overlay = styled.div`
   position: fixed;
@@ -20,8 +21,8 @@ export const ModalContainer = styled.div`
   transform: translate(-50%, -50%);
   background-color: black;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  max-width: 400px;
+  padding: 1.25rem;
+  max-width: 25rem;
   width: 90%;
   height: auto;
   z-index: 100;
@@ -30,34 +31,34 @@ export const ModalContainer = styled.div`
 
 export const ModalTitle = styled.h2`
   text-align: center;
-  color: #D1AB24;
+  color: ${tokens.aurodharma.color.yellowStandard};
   font-weight: bold;
-  font-family: 'Poppins', sans-serif;
+  font-family: ${tokens.aurodharma.font.family};
 `;
 
 export const ButtonsContainer = styled.div`
   display: flex;
   justify-content: space-around;
-  margin-top: 40px;
+  margin-top: 2.5rem;
   flex-direction: column;
-  gap: 16px;
-  margin: 12px;
+  gap: 1rem;
+  margin: 0.75rem;
 `;
 
 export const ContactButton = styled.button`
-  padding: 10px 20px;
+  padding: 0.6rem 1.25rem;
   background-color: transparent;
-  border: 1px solid #D1AB24;
-  color: #fff;
+  border: 1px solid ${tokens.aurodharma.color.yellowStandard};
+  color: ${tokens.aurodharma.color.white};
   cursor: pointer;
   transition: background-color 0.3s ease;
-  font-family: 'Poppins', sans-serif;
+  font-family: ${tokens.aurodharma.font.family};
   font-weight: bold;
-  font-size: 16px;
+  font-size: ${tokens.aurodharma.font.size.ml};
 
   &:hover {
-    border: 1px solid #F1C40F;
-    background-color: #D1AB24;
+    border: 1px solid ${tokens.aurodharma.color.yellowLight};
+    background-color: ${tokens.aurodharma.color.yellowStandard};
   }
 `;
 
@@ -65,11 +66,11 @@ export const CloseButton = styled.button`
   position: absolute;
   top: 10px;
   right: 10px;
-  padding: 5px;
+  padding: 0.3rem;
   background-color: transparent;
   border: none;
   cursor: pointer;
-  color: #D1AB24;
+  color: ${tokens.aurodharma.color.yellowStandard};
   font-weight: bold;
-  font-family: 'Poppins', sans-serif;
+  font-family: ${tokens.aurodharma.font.family};
 `;

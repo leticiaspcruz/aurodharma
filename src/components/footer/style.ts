@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import tokens from '../../theme/tokens';
 
 export const Container = styled.footer`
   display: flex;
@@ -7,35 +8,34 @@ export const Container = styled.footer`
 `;
 
 export const SocialMedia = styled.div`
-  padding: 50px;
+  padding: 3rem;
   display: flex;
   flex-direction: row; ;
   justify-content: space-between;
 `;
 
 export const Link = styled.a`
-  color: #D1AB24;
-  font-family: 'Poppins', sans-serif;
+  color: ${tokens.aurodharma.color.yellowStandard};
+  font-family: ${tokens.aurodharma.font.family};
   font-weight: normal;
-  font-size: 15px;
-  margin: 20px;
+  font-size: ${tokens.aurodharma.font.size.md};
+  margin: 1.25rem;
 `;
 
 export const Text = styled.p`
   color: white;
-  font-family:'Poppins', sans-serif;
+  font-family: ${tokens.aurodharma.font.family};
   font-weight: normal;
-  font-size: 10px;
-  margin-bottom: 20px;
+  font-size: ${tokens.aurodharma.font.size.sm};
+  margin-bottom: 1.25rem;
   text-align: center;
 `;
 
 export const CopyrightLink = styled.a`
   color: white;
-  font-family: 'Poppins', sans-serif;
   font-weight: normal;
-  font-size: 12px;
-  margin-bottom: 30px;
+  font-size: ${tokens.aurodharma.font.size.sm};
+  margin-bottom: 1.25rem;
   margin-top: 0;
   text-align: center;
   text-decoration: underline;

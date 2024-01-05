@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const nextEvents = {
   dayNumber: "08",
   monthName: "de Setembro",
