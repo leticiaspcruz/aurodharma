@@ -7,6 +7,7 @@ The following libraries and technologies were used to develop this project:
 
 - ReactJS: A JavaScript library for building user interfaces.
 - Styled Components: A CSS-in-JS library for styling React components.
+- Frame Motion: A library for creating smooth and expressive animations in React applications.
 - TypeScript: A typed superset of JavaScript that compiles to plain JavaScript.
 
 # Requirements
