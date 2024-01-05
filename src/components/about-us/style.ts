@@ -71,6 +71,14 @@ export const AlbumImage = styled.img`
   cursor: pointer;
   transition: transform .3s;
 
+  @media(max-width: ${tokens.aurodharma.breakpoints.tablet}) {
+    width: 42%;
+  }
+
+  @media(min-width: ${tokens.aurodharma.breakpoints.super}) {
+    width: 30%;
+  }
+
   :hover {
   transform: scale(1.05);
   }

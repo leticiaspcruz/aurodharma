@@ -73,4 +73,8 @@ export const CloseButton = styled.button`
   color: ${tokens.aurodharma.color.yellowStandard};
   font-weight: bold;
   font-family: ${tokens.aurodharma.font.family};
+
+  &:hover {
+    color: ${tokens.aurodharma.color.white};
+  }
 `;

@@ -16,6 +16,10 @@ export const BannerImage = styled.div`
     height: 22rem;
     background-position: center top -45px;
   }
+
+  @media(min-width: ${tokens.aurodharma.breakpoints.super}) {
+    height: 100rem;
+  }
 `;
 
 export const Logo = styled.img`
@@ -23,8 +27,12 @@ export const Logo = styled.img`
   margin-bottom: 0;
 
   @media(max-width: ${tokens.aurodharma.breakpoints.tablet}) {
-    width: 70%;
-    margin-top: 80%;
+    width: 60%;
+    margin-top: 60%;
+  }
+
+  @media(min-width: ${tokens.aurodharma.breakpoints.super}) {
+    width: 30%;
   }
 `;
 
@@ -40,6 +48,10 @@ export const Nav = styled.nav`
   align-items: center;
   z-index: 10;
   bottom: 15rem;
+
+  @media(min-width: ${tokens.aurodharma.breakpoints.super}) {
+    bottom: 25rem;
+  }
 `;
 
 export const NavMenu = styled.ul`

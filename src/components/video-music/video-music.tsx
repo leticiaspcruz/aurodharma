@@ -8,6 +8,7 @@ import {
   YoutubeButton,
   Title } 
 from './style';
+import { Reveal } from '../reveal';
 
 const VideoMusic = () => {
   const ClipeDiva = () => {
@@ -36,27 +37,35 @@ const VideoMusic = () => {
   return (
     <>
     <Container id="video-music">
-        <TitleDiv>
-          <Title>últimos clipes</Title>
-        </TitleDiv>
+        <Reveal>
+          <TitleDiv>
+            <Title>clipes</Title>
+          </TitleDiv>
+        </Reveal>
         <div>
           <ColumnsDiv>
+           <Reveal width="100%">
             <Column>
-              <ClipeDiva/>
+                <ClipeDiva/>
             </Column>
+           </Reveal>
+           <Reveal width="100%">
             <Column>
               <ClipeKarma/>
             </Column>
+           </Reveal>
           </ColumnsDiv>
         </div>
-        <ButtonDiv>
-          <YoutubeButton type="button" 
-          onClick={()=> {window.open(
-            "https://www.youtube.com/channel/UCOxfPv7E1ujJqTJs3DazSYQ"
-            )}}>
-            inscreva-se em nosso canal
-          </YoutubeButton>
-        </ButtonDiv>
+        <Reveal width="100%">
+          <ButtonDiv>
+            <YoutubeButton type="button" 
+            onClick={()=> {window.open(
+              "https://www.youtube.com/channel/UCOxfPv7E1ujJqTJs3DazSYQ"
+              )}}>
+              inscreva-se em nosso canal
+            </YoutubeButton>
+          </ButtonDiv>
+        </Reveal>
     </Container>
     </>
   )

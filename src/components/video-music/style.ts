@@ -3,7 +3,7 @@ import tokens from '../../theme/tokens';
 
 export const Container = styled.div`
   background: black;
-  height: 35rem;
+  height: 42rem;
   margin-top: 4rem;
 `;
 
@@ -29,7 +29,7 @@ export const TitleDiv = styled.div`
   margin-top: 1rem;
 
   @media(max-width: ${tokens.aurodharma.breakpoints.tablet}) {
-    margin: 0;
+    margin: 0 2.5rem;
     justify-content: center;
   }
   
@@ -51,16 +51,11 @@ export const ColumnsDiv = styled.div`
 export const ButtonDiv = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: right;
-  margin-right: 5rem;
-  margin-top: 1rem;
+  justify-content: center;
   cursor: pointer;
 
   @media(max-width: ${tokens.aurodharma.breakpoints.tablet}) {
-    margin-right: 0;
-    margin-top: 2rem;
-    flex-direction: column;
-    justify-content: center;
+    margin-top: 1rem;
   }
 `;
 
@@ -85,7 +80,7 @@ export const Title = styled.h1`
   color: ${tokens.aurodharma.color.yellowStandard};
   font-family: ${tokens.aurodharma.font.family};
   font-weight: bold;
-  font-size: 30px;
+  font-size: ${tokens.aurodharma.font.size.xl};
   margin-top: 2rem;
   text-align: right;
 `;

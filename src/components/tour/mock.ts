@@ -1,6 +1,7 @@
 export const nextEvents = {
-  dayNumber: "08",
-  monthName: "de Setembro",
-  locationName: "Casa de Cultura do Butantã às 16h",
-  eventLink: "https://www.instagram.com/casadeculturabt/",
+  // dayNumber: "08",
+  // monthName: "de Setembro",
+  // locationName: "Casa de Cultura do Butantã às 16h",
+  // eventLink: "https://www.instagram.com/casadeculturabt/",
+  moreInfo: 'em breve, novidades!'
 };

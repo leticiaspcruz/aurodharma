@@ -4,10 +4,11 @@ import sidPicture from '../../assets/sid.png';
 import martinPicture from '../../assets/martin.png';
 import marceloPicture from '../../assets/marcelo.png'; //
 import elidioPicture from '../../assets/elidio.png';
+import { Reveal } from '../reveal';
 
 const Gallery = () => {
   return (
-    <>
+    <Reveal>
       <Container>
         <Picture src={sidPicture} 
           alt="Sid - Band Member - Vocal and Eletric Guitar" />
@@ -18,7 +19,7 @@ const Gallery = () => {
         <Picture src={elidioPicture} 
           alt="Elídio - Band Member - Bass" />
       </Container>
-    </>
+    </Reveal>
   )
 };
 

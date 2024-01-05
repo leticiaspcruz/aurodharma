@@ -8,9 +8,20 @@ import {
 } 
 from './style';
 
-import { nextEvents } from './mock';
+interface NextEventsInterface {
+  nextEvents: {
+    eventLink?: string,
+    dayNumber?: string,
+    monthName?: string,
+    locationName?: string,
+    moreInfo?: string,
+  }
+}
 
-const InfoButton = () => {
+const InfoButton: React.FC<NextEventsInterface> = ({ nextEvents }) => {
+
+  if (!nextEvents) return null;
+
   return (
     <>
       <InfoButtonContainer>

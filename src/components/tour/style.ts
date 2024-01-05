@@ -62,6 +62,7 @@ export const Title = styled.h1`
 
 export const Container = styled.div`
   margin: 0 2.25rem;
+  color: ${tokens.aurodharma.color.yellowStandard};
 
   @media(max-width: ${tokens.aurodharma.breakpoints.tablet}) {
     margin-top: 75%;
