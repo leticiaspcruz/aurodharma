@@ -70,6 +70,7 @@ export const AlbumImage = styled.img`
   width: 60%;
   cursor: pointer;
   transition: transform .3s;
+  border-radius: 8px;
 
   @media(max-width: ${tokens.aurodharma.breakpoints.tablet}) {
     width: 42%;
