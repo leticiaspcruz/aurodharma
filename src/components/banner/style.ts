@@ -74,6 +74,7 @@ export const NavLink = styled.a`
 
   :hover {
     color: ${tokens.aurodharma.color.yellowStandard};
+    transition: 0.3s ease;
   }
 `;
 

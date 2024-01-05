@@ -59,7 +59,8 @@ export const ContactButton = styled.button`
   &:hover {
     border: 1px solid ${tokens.aurodharma.color.yellowLight};
     background-color: ${tokens.aurodharma.color.yellowStandard};
-  }
+    transition: background-color 0.3s ease;
+ }
 `;
 
 export const CloseButton = styled.button`
@@ -76,5 +77,6 @@ export const CloseButton = styled.button`
 
   &:hover {
     color: ${tokens.aurodharma.color.white};
+    transition: 0.3s ease;
   }
 `;
