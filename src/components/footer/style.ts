@@ -26,7 +26,7 @@ export const Text = styled.p`
   color: white;
   font-family: ${tokens.aurodharma.font.family};
   font-weight: normal;
-  font-size: ${tokens.aurodharma.font.size.sm};
+  font-size: ${tokens.aurodharma.font.size.xs};
   margin-bottom: 1.25rem;
   text-align: center;
 `;
@@ -34,7 +34,7 @@ export const Text = styled.p`
 export const CopyrightLink = styled.a`
   color: white;
   font-weight: normal;
-  font-size: ${tokens.aurodharma.font.size.sm};
+  font-size: ${tokens.aurodharma.font.size.xs};
   margin-bottom: 1.25rem;
   margin-top: 0;
   text-align: center;

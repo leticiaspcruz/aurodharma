@@ -8,7 +8,7 @@ import { Reveal } from '../reveal';
 
 const Gallery = () => {
   return (
-    <Reveal>
+    <Reveal width='100%'>
       <Container>
         <Picture src={sidPicture} 
           alt="Sid - Band Member - Vocal and Eletric Guitar" />

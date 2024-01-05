@@ -31,10 +31,10 @@ export const Section = styled.div`
 `;
 
 export const Title = styled.h1`
-  color: ${tokens.aurodharma.color.yellowStandard};
+  color: ${tokens.aurodharma.color.yellowLight};
   font-family: ${tokens.aurodharma.font.family};
   font-weight: bold;
-  font-size: 30px;
+  font-size: ${tokens.aurodharma.font.size.xxl};
   margin-top: 2rem;
   text-align: center;
 `;

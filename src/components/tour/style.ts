@@ -46,17 +46,17 @@ export const Month = styled.p`
   color: ${tokens.aurodharma.color.white};
   font-family: ${tokens.aurodharma.font.family};
   font-weight: lighter;
-  font-size: ${tokens.aurodharma.font.size.md};
+  font-size: ${tokens.aurodharma.font.size.sm};
   margin: 0.3rem;
   margin-left: 0 !important;
   padding-top: 0.3rem;
 `;
 
 export const Title = styled.h1`
-  color: ${tokens.aurodharma.color.yellowStandard};
+  color: ${tokens.aurodharma.color.white};
   font-family: ${tokens.aurodharma.font.family};
   font-weight: lighter;
-  font-size: ${tokens.aurodharma.font.size.lg};
+  font-size: ${tokens.aurodharma.font.size.xl};
   text-align: center;
 `;
 
