@@ -4,8 +4,6 @@ import tokens from '../../theme/tokens';
 export const Container = styled.div`
   display: flex;
   flex-direction:row;
-  height: 40%;
-  margin-top: 1.25rem;
 
   @media (max-width: ${tokens.aurodharma.breakpoints.tablet}) {
     width: 100%;
@@ -19,8 +17,8 @@ export const Picture = styled.img`
   opacity: 70%;
 
   :hover {
-  transform: scale(1.05);
-  opacity: 100%;
-  z-index: 90;
+    transform: scale(1.01);
+    opacity: 100%;
+    z-index: 90;
   }
 `;

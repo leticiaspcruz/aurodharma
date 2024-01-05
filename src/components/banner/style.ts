@@ -60,6 +60,7 @@ export const NavMenu = styled.ul`
   list-style: none;
   margin-top: 0;
   cursor: pointer;
+  gap: 14px;
 
   @media(max-width: ${tokens.aurodharma.breakpoints.tablet}) {
     display: none;
@@ -68,7 +69,6 @@ export const NavMenu = styled.ul`
 
 export const NavLink = styled.a`
   color: white;
-  margin: 10px;
   text-decoration: none;
   text-shadow: ${tokens.aurodharma.shadow.text};
 
